@@ -2,7 +2,7 @@ package Builders
 
 interface Builder {
     fun reset()
-    fun grinding()
-    fun drilling()
-    fun painting()
+    fun grinding(type : String)
+    fun drilling(type : String)
+    fun painting(colour : String)
 }

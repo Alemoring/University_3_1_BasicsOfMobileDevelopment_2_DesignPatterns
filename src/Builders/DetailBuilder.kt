@@ -2,23 +2,23 @@ package Builders
 import Detail
 
 class DetailBuilder: Builder {
-    var detail = Detail()
+    private var detail = Detail()
     override fun reset() {
         detail = Detail()
     }
 
-    override fun grinding() {
-        TODO("Not yet implemented")
+    override fun grinding(type : String) {
+        detail.typeOfGrinding = type
     }
 
-    override fun drilling() {
-        TODO("Not yet implemented")
+    override fun drilling(type : String) {
+        detail.typeOfDrilling = type
     }
 
-    override fun painting() {
-        TODO("Not yet implemented")
+    override fun painting(colour : String) {
+        detail.colour = colour
     }
-    fun getDetail(): Detail{
+    fun getNowDetail(): Detail{
         return detail
     }
 }

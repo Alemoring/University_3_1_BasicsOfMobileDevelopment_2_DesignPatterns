@@ -1,21 +1,21 @@
 class Detail {
-    var typeOfGrinding: String
+    var typeOfGrinding: String = ""
         get() {
-            TODO()
+            return field
         }
-        set(value) {}
-    var typeOfDrilling: String
+        set(value) {field = value}
+    var typeOfDrilling: String = ""
         get() {
-            TODO()
+            return field
         }
-        set(value) {}
-    var color: String
+        set(value) {field = value}
+    var colour: String = ""
         get() {
-            TODO()
+            return field
         }
-        set(value) {}
+        set(value) {field = value}
 
     override fun toString(): String {
-        return "Получившаяся деталь\nТип шлифовки = '$typeOfGrinding', \nТип сверления = '$typeOfDrilling', \nЦвет = '$color'"
+        return "Получившаяся деталь\nТип шлифовки = '$typeOfGrinding', \nТип сверления = '$typeOfDrilling', \nЦвет = '$colour'"
     }
 }
